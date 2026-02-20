@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bioplastics vs Petroleum-Based Plastics</title>
+
+<style>
+
+/* ======================
+   GLOBAL STYLES
+====================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f5f0ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ======================
+   HEADER & NAVBAR
+====================== */
+header {
+    background: #d8c8ff;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4b2aad;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #4b2aad;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #7a5cff;
+}
+
+/* Mobile Menu */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* ======================
+   SECTIONS
+====================== */
+section {
+    width: 90%;
+    margin: 50px auto;
+}
+
+h2 {
+    color: #5a35c5;
+    margin-bottom: 15px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    background-color: #e4dbff;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* ======================
+   TABLE
+====================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #cbb8ff;
+}
+
+th {
+    background-color: #d8c8ff;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* ======================
+   FOOTER
+====================== */
+footer {
+    background: #d8c8ff;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+    color: #4b2aad;
+}
+
+footer p {
+    max-width: 600px;
+}
+
+/* ======================
+   RESPONSIVE DESIGN
+====================== */
+@media(max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        right: 0;
+        top: 70px;
+        background: #e8ddff;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        padding: 20px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        color: #4b2aad;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">Chemistry Project</div>
+        <ul class="nav-links">
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#bioplastics">Bioplastics</a></li>
+            <li><a href="#petroleum">Petroleum Plastics</a></li>
+            <li><a href="#comparison">Comparison</a></li>
+        </ul>
+        <div class="menu-toggle">&#9776;</div>
+    </nav>
+</header>
+
+<section id="intro">
+    <h2>Introduction</h2>
+    <p>
+        Plastics are polymer materials made from repeating monomers. 
+        This website compares bioplastics (derived from renewable biological sources) 
+        and petroleum-based plastics (derived from fossil fuels).
+        The goal is to understand their chemistry, environmental impact, 
+        production process, and sustainability.
+    </p>
+</section>
+
+<section id="bioplastics">
+    <h2>Bioplastics</h2>
+    <p>
+        Bioplastics are polymers made from renewable resources such as corn starch, sugarcane, or cellulose. 
+        Some are biodegradable, while others are simply bio-based.
+    </p>
+
+    <div class="card-container">
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Corn-based bioplastic">
+            <h4>PLA (Polylactic Acid)</h4>
+            <p>Made from fermented plant starch. Often used in packaging and 3D printing.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Biodegradable bags">
+            <h4>Biodegradable Bags</h4>
+            <p>Designed to break down under composting conditions.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Starch plastics">
+            <h4>Starch-Based Plastics</h4>
+            <p>Made by modifying natural starch polymers.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Bio packaging">
+            <h4>Bio Packaging</h4>
+            <p>Eco-friendly packaging made from renewable biomass.</p>
+        </div>
+    </div>
+</section>
+
+<section id="petroleum">
+    <h2>Petroleum-Based Plastics</h2>
+    <p>
+        Petroleum plastics are synthetic polymers derived from crude oil or natural gas.
+        They are durable, inexpensive, and widely used.
+    </p>
+
+    <div class="card-container">
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="PET bottles">
+            <h4>Polyethylene (PE)</h4>
+            <p>Used in plastic bags and containers.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Plastic bottles">
+            <h4>Polyethylene Terephthalate (PET)</h4>
+            <p>Commonly used in water bottles and packaging.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="PVC pipes">
+            <h4>Polyvinyl Chloride (PVC)</h4>
+            <p>Used in pipes, cables, and construction materials.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Polystyrene cups">
+            <h4>Polystyrene (PS)</h4>
+            <p>Used in disposable cups and packaging foam.</p>
+        </div>
+    </div>
+</section>
+
+<section id="comparison">
+    <h2>Comparison Table</h2>
+    <table>
+        <tr>
+            <th>Factor</th>
+            <th>Bioplastics</th>
+            <th>Petroleum Plastics</th>
+        </tr>
+        <tr>
+            <td>Raw Material</td>
+            <td>Renewable biomass</td>
+            <td>Fossil fuels</td>
+        </tr>
+        <tr>
+            <td>Biodegradability</td>
+            <td>Some types biodegradable</td>
+            <td>Mostly non-biodegradable</td>
+        </tr>
+        <tr>
+            <td>Carbon Footprint</td>
+            <td>Lower</td>
+            <td>Higher</td>
+        </tr>
+        <tr>
+            <td>Durability</td>
+            <td>Moderate</td>
+            <td>High</td>
+        </tr>
+    </table>
+</section>
+
+<footer>
+    <h3>About the Author</h3>
+    <p>
+        Name: Your Name Here <br>
+        School: Your School Name <br>
+        Subject: Chemistry <br>
+        Project: Comparing Bioplastics and Petroleum-Based Plastics <br>
+        Teacher: Teacher's Name
+    </p>
+</footer>
+
+<script>
+
+/* Mobile Navbar Toggle */
+const toggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+toggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+
+/* Close menu when link clicked (mobile) */
+document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+    });
+});
+
+</script>
+
+</body>
+</html>
